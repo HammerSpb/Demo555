@@ -1,4 +1,14 @@
 {
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "scripts": {
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +29,8 @@
   },
   "homepage": "https://github.com/HammerSpb/Demo555#readme",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "husky": "^4.2.5",
