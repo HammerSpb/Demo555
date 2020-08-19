@@ -1,11 +1,12 @@
 {
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "name": "Demo555",
   "version": "1.0.0",
   "description": "[![semantic-release][semantic-image]][semantic-url]",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HammerSpb/Demo555.git"
@@ -16,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/HammerSpb/Demo555/issues"
   },
-  "homepage": "https://github.com/HammerSpb/Demo555#readme"
+  "homepage": "https://github.com/HammerSpb/Demo555#readme",
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
